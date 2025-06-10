@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <h2>Add Certificate</h2>
+  <form method="POST" action="/admin/add">
+    <input name="name" placeholder="Name" required><br><br>
+    <input name="nrc" placeholder="NRC" required><br><br>
+    <input name="certNo" placeholder="Certificate No" required><br><br>
+    <select name="certType">
+      <option value="CDC">CDC</option>
+      <option value="Driving">Driving</option>
+      <option value="Workshop">Workshop</option>
+    </select><br><br>
+    <button type="submit">Add</button>
+  </form>
+</body>
+</html>
