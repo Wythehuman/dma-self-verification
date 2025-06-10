@@ -1,18 +1,67 @@
 
 body {
   font-family: sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004b87;
+  color: white;
   text-align: center;
   padding: 20px;
 }
-input, select {
-  margin: 5px;
-  padding: 10px;
-  font-size: 16px;
-}
-button {
+
+.instructions {
+  background: #e0ecf9;
   padding: 10px 20px;
 }
-#result {
+
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   margin-top: 20px;
-  font-weight: bold;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #004b87;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#resultPanel {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d2f5d2;
+  border-left: 4px solid green;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004b87;
+  color: white;
+  margin-top: 40px;
 }

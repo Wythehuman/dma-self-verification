@@ -1,16 +1,19 @@
 
-async function verify() {
-  const name = document.getElementById("name").value.trim();
+document.getElementById("verifyForm").addEventListener("submit", function(e) {
+  e.preventDefault();
   const nrc = document.getElementById("nrc").value.trim();
-  const certType = document.getElementById("certType").value;
+  const cert = document.getElementById("certificate").value;
 
-  const res = await fetch(`/api/verify?name=${name}&nrc=${nrc}&certType=${certType}`);
-  const data = await res.json();
+  const resultPanel = document.getElementById("resultPanel");
+  const resultText = document.getElementById("resultText");
 
-  const resultBox = document.getElementById("result");
-  if (data.found) {
-    resultBox.innerHTML = `<p style='color:green;'>✅ Verified: ${data.certNo}</p>`;
+  if (nrc && cert) {
+    resultText.innerText = `✅ Verification Success:
+      NRC: ${nrc}
+      Certificate: ${cert}`;
+    resultPanel.classList.remove("hidden");
   } else {
-    resultBox.innerHTML = `<p style='color:red;'>❌ No matching certificate found.</p>`;
+    resultText.innerText = "❌ Please fill in all fields correctly.";
+    resultPanel.classList.remove("hidden");
   }
-}
+});

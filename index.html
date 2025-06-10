@@ -1,23 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Self Verification</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DMA Self Verification</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Certificate Self Verification</h1>
-  <input type="text" id="name" placeholder="Enter Name">
-  <input type="text" id="nrc" placeholder="Enter NRC">
-  <select id="certType">
-    <option value="CDC">CDC</option>
-    <option value="Driving">Driving</option>
-    <option value="Workshop">Workshop</option>
-  </select>
-  <button onclick="verify()">Verify</button>
-  <div id="result"></div>
+  <header>
+    <h1>Department of Marine Administration</h1>
+    <h2>All-in-One Certificate Self Verification</h2>
+  </header>
+
+  <section class="instructions">
+    <h3>Instructions:</h3>
+    <ol>
+      <li>Scan QR Code or fill in the form manually</li>
+      <li>Select Certificate Type</li>
+      <li>Click Verify Now</li>
+      <li>See results below</li>
+    </ol>
+  </section>
+
+  <main>
+    <form id="verifyForm">
+      <label for="nrc">NRC Number:</label>
+      <input type="text" id="nrc" required />
+
+      <label for="certificate">Certificate Type:</label>
+      <select id="certificate" required>
+        <option value="">-- Select --</option>
+        <option value="Basic Safety">Basic Safety</option>
+        <option value="Advanced Fire Fighting">Advanced Fire Fighting</option>
+      </select>
+
+      <button type="submit">Verify Now</button>
+    </form>
+
+    <div id="resultPanel" class="hidden">
+      <h3>Verification Result:</h3>
+      <p id="resultText">Loading...</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Department of Marine Administration, Myanmar. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
