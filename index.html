@@ -8,17 +8,20 @@
 </head>
 <body>
   <header>
-    <h1>Department of Marine Administration</h1>
-    <h2>All-in-One Certificate Self Verification</h2>
+    <img src="dma-logo.png" alt="DMA Logo" class="logo">
+    <div class="titles">
+      <h1>Department of Marine Administration</h1>
+      <h2>All-in-One Certificate Self Verification</h2>
+    </div>
   </header>
 
   <section class="instructions">
     <h3>Instructions:</h3>
     <ol>
-      <li>Scan QR Code or fill in the form manually</li>
+      <li>Scan QR Code or manually fill the form</li>
       <li>Select Certificate Type</li>
       <li>Click Verify Now</li>
-      <li>See results below</li>
+      <li>Results will be shown below</li>
     </ol>
   </section>
 
@@ -32,19 +35,23 @@
         <option value="">-- Select --</option>
         <option value="Basic Safety">Basic Safety</option>
         <option value="Advanced Fire Fighting">Advanced Fire Fighting</option>
+        <option value="Survival Craft">Survival Craft</option>
+        <option value="Medical First Aid">Medical First Aid</option>
       </select>
 
       <button type="submit">Verify Now</button>
     </form>
 
     <div id="resultPanel" class="hidden">
-      <h3>Verification Result:</h3>
-      <p id="resultText">Loading...</p>
+      <h3>Verification Result</h3>
+      <p id="resultText">Loading result...</p>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Department of Marine Administration, Myanmar. All rights reserved.</p>
+    <img src="dma-logo.png" alt="DMA Logo" class="footer-logo">
+    <p>Department of Marine Administration, No. 363, Corner of Merchant Rd & Thein Phyu Rd, Yangon, Myanmar</p>
+    <p>&copy; 2025 DMA Myanmar. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

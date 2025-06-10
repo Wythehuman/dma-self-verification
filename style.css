@@ -1,46 +1,63 @@
 
 body {
-  font-family: sans-serif;
-  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background: #f4f4f4;
 }
 
 header {
   background-color: #004b87;
   color: white;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 60px;
+  margin-right: 20px;
+}
+
+.titles h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.titles h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .instructions {
   background: #e0ecf9;
-  padding: 10px 20px;
+  padding: 15px 25px;
+  font-size: 15px;
 }
 
 main {
-  padding: 20px;
-  max-width: 600px;
-  margin: auto;
   background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin-top: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 form label {
   display: block;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 form input, form select {
   width: 100%;
   padding: 8px;
-  margin-top: 5px;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 button {
-  margin-top: 15px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background-color: #004b87;
   color: white;
   border: none;
@@ -48,9 +65,9 @@ button {
 }
 
 #resultPanel {
-  margin-top: 20px;
+  background-color: #d9f9d9;
   padding: 15px;
-  background-color: #d2f5d2;
+  margin-top: 20px;
   border-left: 4px solid green;
 }
 
@@ -59,9 +76,13 @@ button {
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
   background-color: #004b87;
   color: white;
-  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  width: 50px;
+  margin-bottom: 10px;
 }
