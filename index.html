@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Self Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Certificate Self Verification</h1>
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="text" id="nrc" placeholder="Enter NRC">
+  <select id="certType">
+    <option value="CDC">CDC</option>
+    <option value="Driving">Driving</option>
+    <option value="Workshop">Workshop</option>
+  </select>
+  <button onclick="verify()">Verify</button>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
